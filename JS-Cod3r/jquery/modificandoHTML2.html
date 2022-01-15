@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Modificando HTML #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src='js/jquery.js'></script>
+</head>
+
+<body class='conteudo exercicio'>
+    <h1>Modificando HTML #02</h1>
+    <div id='div1'>1</div>
+    <div id='div2'>2</div>
+    <div id='div3'>3</div>
+    <p class='numero'>4</p>
+    <p class='numero'>5</p>
+
+    <script>
+        $('#div1').append(', 2') // adiciona ,2  ao 1, fican 1,2 no html
+        $('#div1').prepend('0, ') // bota 0 no inicio
+
+        $('<span>, 3</span>').appendTo('#div1') //apenda para todos elementos do seletor
+        $('<span>-1, </span>').prepenTo('#div1') //faz um prepend para todos elementos do seletor
+            // se faz necessario por o <span>, pelo motivo de o jquery entender o que de fato vc quer adcionar
+            //se não por o tipo do elemento, ele vai dar erro porque ele não reconhece -1 ou 1 ou string como função
+
+        $('#div2').before('<p>Antes 2</p>') //insere paragrago
+        $('#div2').after('<p>Depois 2</p>') //insere parafrago
+
+        $('<p>Antes 3 </p>').insetBefore('#div3') //insere paragrafo
+        $('<p> Depois de 3</p>').insertAfter('#div3') //insere paragrafo
+
+        // $('p.numero').wrap('<div>')//envolve todos elementos da class em divs separadas
+        $('p.numero').wrapAll('<div id="div4">') //envolve todos elementos do seletor em apenas uma div que foi criada, div4 nao existia antes do comando
+        $("#div4").empty() // limpa o conteudo da div selectionada
+        $('#div3, #div4').prev().remove() // vai pegar os parafragos Antes 3 e Depois 3, a funçao remove tudo que estiver antes do seletor setado
+
+        // $('<div>Substituto</div').replaceAll('body > p') // todo paragrafo será substituido por uma div chamada substituto// no caso antes e depois de 2
+        $('body > p').replaceWith('<div>Substituto<div>') // este é mais especifico, o seletor vem antes é o mais indicado
+        $('body > p').replaceWith(function() {
+            return $('<div>').html($(this).html()).append('!!!') // replaceWith com callback, ele vai pegar todos elementos do html e jogar dentro da div
+        })
+    </script>
+</body>

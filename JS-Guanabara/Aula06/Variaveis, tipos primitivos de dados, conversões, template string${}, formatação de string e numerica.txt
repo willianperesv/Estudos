@@ -1,0 +1,58 @@
+Variaveis, tipos primitivos de dados, conversões, template string${}, formatação de string e numerica
+
+
+
+Aula 4
+Todo comando dentro de um “body” inicia em { e acaba em }
+Aula 5
+Comentarios em uma unica linha utilizar // - Java Script
+Comentarios em linhas multiplas utilizar /* ponto inicial, até o delimitador final */ - Css
+Comentario HTML <!--isso é uma comentario --> 
+REGRAS PARA VARIÁVEIS
+*Podem começar com “letra, $ ou _”
+*Não podem começar com numeros, Ex: 1A, 5 andar, 3Caso
+*É possivel usar letras e numeros
+*É possível usar acentos e simbolos
+*Não podem conter espaços
+*Não podem ser palavras reservadas
+Variáveis
+Maisculas e minusculas fazem diferença, diferenciando como duas variaveis a opção utilizada Ex: var a= 10, var A=20
+Boas praticas: sempre especificar variaveis no proprio nome
+ Tipos primitivos de dados
+Number, infinity, NaN (not an number)
+String
+Boolean
+Null
+Undefined
+Object> Array
+Function 
+
+Comando “typeof” revela o tipo do dado
+
+Sinal + é o mesmo que concatenação
+
+Conversões
+Number.parseInt – para numeros inteiros
+Number.parseFloat – para numeros flutuantes (fracionados)
+Number – conversão automatica para ambos modos
+
+De numero pra string
+String(n)
+n.toString()
+
+Template String
+Usando a ` para abrir e fechar` use o ${item} 
+Formatação de Strings’
+var s = ‘ JavaScript’               
+‘Eu estou aprendendo s’     // não faz interpolação
+‘Eu estou aprendendo’ + s   // usa concatenação
+‘Eu estou aprendendo ${s)  // usa template string
+
+s.length   // quantos caracteres a string tem
+s.toUpperCase()   // tudo para maiscula
+S.toLowerCase() // tudo para minusculas
+
+Formatação numerica
+
+n1.toFixed(2) reconhece as casas decimais
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) // reconhece a moeda e converte em reais ou qualquer moeda

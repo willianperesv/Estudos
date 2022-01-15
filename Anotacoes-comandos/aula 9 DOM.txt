@@ -1,0 +1,13 @@
+DOM
+
+DOCUMENT OBJECT MODEL
+
+
+funciona sob sistema hierarquico de importancia
+
+	WINDOW (parent)
+LOCATION  DOCUMENT   HISTORY  (childs)
+        
+
+         HTML (parents)
+   head                Body (Childs)

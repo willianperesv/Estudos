@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            align-content: center;
+            background-color: black;
+            color: white;
+            font: normal 18pt verdana;
+            
+        }
+     
+        div#fer{
+            text-align: center;
+            font: normal 18pt verdana;
+            margin: auto;
+            background: green;
+            width: 400px;
+
+        }
+        div#res{
+            text-align: center;
+        }
+        
+            
+        
+      
+    </style>
+</head>
+<body>
+    <div id="fer">
+    <h1>Calculadora</h1>
+
+    <input type="number" name="txtn1" id="txtn1"> 
+    <input type="number" name="txtn2" id="txtn2"></br>
+    <input type="button" name="soma" value="somar" onclick= "somar()">
+    <input type="button" value="subtrair" onclick="subtrair()">
+     <input type="button" value="dividir" onclick="dividir()">
+     <input type="button" value="multiplicar" onclick="multiplicar()">
+    </div> 
+
+<div id="res">Resultado</div>
+    <script>
+        var num1 = window.document.getElementById('txtn1')
+        var num2 = window.document.getElementById('txtn2')
+        var res = window.document.getElementById('res')
+      
+       
+       
+        function somar() {            
+           
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var s = n1 + n2
+
+            res.innerHTML = `O resultado da soma é ${s}`
+                    
+            window.document.getElementById('txtn1').value = ""
+            window.document.getElementById('txtn2').value = ""   
+        }
+        function subtrair() {
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var sub = n1 - n2
+            res.innerHTML = `O resultado da subtração é ${sub}`
+
+        }
+        function dividir () {
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var divi = n1 / n2
+            res.innerHTML = `O resultado da divisão é ${divi}`
+        }
+        function multiplicar (){
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var multi = n1 * n2
+            res.innerHTML = `O resultado da multiplicação é ${multi}`
+        }
+
+
+    </script>
+
+    
+</body>
+</html>

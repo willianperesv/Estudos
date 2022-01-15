@@ -1,0 +1,8 @@
+Condições
+comando if{}
+comando else{}
+
+dentro destes blocos funcionam as condições, trata-se de uma aplicação boleana
+
+// Div id é #
+// div class é .

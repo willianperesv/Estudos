@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Manipulando CSS</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src='js/jquery.js'></script>
+</head>
+
+<body class='conteudo exercicio'>
+    <h1>Manipulando CSS</h1>
+    <div id='div1'>1</div>
+    <div id='div2'>2</div>
+    <div id='div3'>3</div>
+    <div id='resultado'></div>
+    <script>
+        const fonte = $('#div1').css('font-family')//aqui ele lê a font da div
+        $('#resultado').append(`Fonte é ${fonte}`)//mostra ao resultado
+
+        $('#div1').css('dont-size', '3em')//altera a fonte
+        $('#div1').css({
+            'font-size': '3.5',
+            'color': 'yellow'
+        })//altera conjunto
+        $('#div1').css('font-size', function() {//segundo parametro função callback
+            return `${2 * 2}em`
+        })
+        $('#div2').addClass('destaque')//adiciona a classe ja prevista no css do arquivo
+
+        const temClasse = $('#div2').hasClass('destaque')//verifica se a div tem classe
+        $('#resultado').append('<br>Tem class ${tem Classe}')//mostra o resultado da linha anterior
+
+        $('div2').removeClass('destaque')//remove classe
+        $('#div2').toggleClass('destaque')//alterna a classe, se tem ele tira senao ele adiciona
+        $('#div2').toggleClass('destaque')
+    </script>
+</body>

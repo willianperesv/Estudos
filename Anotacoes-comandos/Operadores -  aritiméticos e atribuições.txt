@@ -1,0 +1,55 @@
+Operadores aula 7
+
+FAMILIAS
+
+ARITIMÉTICOS
+ - +,-,*,/(divisão),
+%(divisão inteira, ex: 5%2=1>resultado que sobra da divisão)
+*Potencia **
+
+ORDEM DE PRECEDENCIA
+()
+**
+*/%
+-,+
+ATRIBUIÇÃO
+auto atribuição
+ex: var n = 3
+    n= n + 4
+    *n agora vale 7
+    n = n- 5
+    *n agora vale 2
+simplificando atribuição
+n + =4 // sempre que a soma for a mesma variavel o + pode vir antes do =//
+incremento 
+var n = 10
+    n++ // n++ primeiro mostra 10 e depois 11 (pós decremento)
+    10
+    n
+    11 
+   --n // já mostra direto o resultado no caso 10( pré decremento)
+    10
+RELACIONAIS
+toda expressão de operador relacional ligado o resultado e true or false (booleano)
+> // maior
+< // menor
+>= // maior ou igual
+<= // menor ou igual
+== // igual
+!= // diferente
+=== //(operador de igualdade restrita) observa se são identicos em valor e tipo
+
+ 
+LÓGICOS
+!  // negação 
+&& // conjunção (& lógico)
+|| // disjunção (ou)
+
+a > b && b % 2 == 0   ORDEM de PRECENDENCIA(PRIMEIRO ARITIMÉTICOS>RELACIONAIS> LOGICOS(!,&&||)
+ORDEM PRIMEIRO " NÃO, DEPOIS && DEPOIS O "OU"
+
+TERNARIO
+
+?  E : 
+existem outros
+

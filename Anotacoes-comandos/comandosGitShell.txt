@@ -1,0 +1,17 @@
+COMANDOS GIT E SHELL
+
+      [COMANDOS EM SHELL]
+CD / 'VEM NA RAIZ DO DIRETORIO = C:'
+DIR   'LISTA OS DIRETORIOS'
+CD..  'RETROCEDE O DIRETORIO'
+CLS   'LIMPA O TERMINAL (CLEAR)'
+TAB   'COMPLETA OS NOMES'
+MKDIR ' CRIA PASTA'  
+echo  'CONSOLE.LOG
+echo (hello) > hello.txt - cria o arquivo com a função
+DEL ' APAGA O CONTEUDO DA PASTA, MAS MANTEM A PASTA'
+rmdir workspace /S /Q  'remove o repositorio'
+
+
+    [COMANDOS EM GIT]
+

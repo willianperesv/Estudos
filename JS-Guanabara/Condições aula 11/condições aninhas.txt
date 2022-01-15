@@ -1,0 +1,5 @@
+condições 
+
+usar "break" sempre apos ocupar as cases nas condições aninhadas // switch {
+                                                                       case (valor)
+          								break

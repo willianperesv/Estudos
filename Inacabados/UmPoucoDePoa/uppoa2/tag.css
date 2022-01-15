@@ -1,0 +1,24 @@
+body {
+    font-size: 40px;
+}
+img{
+    display: block;
+    height: 80px;
+    padding: 0;
+}
+.menu{
+    font-size: 26px;
+    font-family: 'Anton','Roboto', sans-serif;
+    
+}
+ul a{
+    left: 20px;
+    padding: 10px;
+}
+
+
+.tag {
+    border: solid 4px;
+    margin: 0;
+}
+

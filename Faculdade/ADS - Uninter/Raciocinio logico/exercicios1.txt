@@ -1,0 +1,15 @@
+1)
+a) nao esta frio
+b)esta frio e chovendo
+c)esta frio ou chovendo
+d)esta chovendo se e somente se esta frio
+e)esta frio entao nao esta chovendo
+f)nao esta frio se e somente se nao esta chovendo
+g)esta frio e nao esta chovendo entao esta frio
+
+2)
+
+a)p v q ^ (~r)
+b)p ^ q v (~p v ~r)
+c)~(p^~r)
+d)~((q v r) ^~p) 

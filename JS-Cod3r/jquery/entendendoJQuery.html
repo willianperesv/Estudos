@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Entendendo jQuery</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src="js/jquery.js"></script>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Entendendo jQuery</h1>
+    <div>1</div>
+    <div>2</div>
+
+    <script>
+        $('div').hide(5000).show(5000).fadeOut(5000)
+        console.log($('div').get(0)) //decorator - fazer novas mundanças no objeto sem herança
+        console.log($.isEmptyObject({
+                nome: null
+            })) // verifica se o obj esta vazio
+        console.log(jQuery.inArray(3, [1, 2, 3])) // verifica se tem algum elemento dentro do array/ primeiro param é o que eu pretendo achar dentro do array o segundo é o array
+
+        $.fn.fundoVerde = function() {
+            this.css('background-color', 'green')
+            return this // esta linha esta linkada a linha 26 no encadeamento de chamada, fazendo o hide ser reconhecido pelo jquery
+        }
+        $('body').fundoVerde().fadeOut('1000').show('1000')
+    </script>
+</body>

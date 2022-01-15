@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            font:normal 16pt Aria;
+        }
+        p{
+            color:blue
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Onde você vive: <input type="text" name="txtNac" id="txtNac">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar(){
+            var txt = document.getElementById('txtNac')
+            var res = document.querySelector('div#res')
+            var nas = (txt.value)
+            if(nas == 'Brasil'){
+                res.innerHTML = `<p>Você é Brasileiro, poh*!</p>`
+            }else{
+                res.innerHTML = `<p>Vocé de outro lugar do mundo! Parabéns! <strong>${nas}</strong></p`
+            }
+        }
+
+    </script>
+</body>
+</html>
+
+

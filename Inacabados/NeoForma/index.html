@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeoForma</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/stylesheet.css">
+  <link rel="stylesheet" href="styles/styleButtons.css">
+  <link rel="stylesheet" href="styles/tag.css">
+ 
+  <link rel="stylesheet" href="styles/menuhamb.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <div class="center">
+   <div class="menu-mobile">
+      <i class="fas fa-bars"></i>
+      <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href text-i="aboutUs.html">Nosso Objetivo</a></li>
+         <li><a href text-i="services.html">
+            <div class="dropdown">
+                <button class="dropbtn">Serviços</button>
+                  <div class="dropdown-content">
+                      <a href="#">Drywall</a>
+                      <a href="#">Elétrica</a>
+                      <a href="#">Pinturas</a>
+                  </div>
+               
+          </div></a></li>
+         <li><a href text-i="galery.html">Galeria</a></li>
+         <li><a href text-i="partners.html">Parceiros</a></li>
+      </ul>
+
+   </div>
+</div>
+   <header class="tag">
+      
+      <nav class="topMenu">
+         <div class="home">Seja Bem Vindo a NeoForma
+       </div>
+         <div class="placards">
+           
+         </div>
+         <div class="socials">
+
+            <ul class="socialLogos">
+               <li><a href=""><img src="/styles/youtube.png" alt="youtube"></a></li>
+               <li><a href="whatsapp"><img src="/styles/whatsapp.png" alt="whatsapp"></a></li>
+               <li><a href="instagram"><img src="/styles/instagram.png" alt="instagram"></a></li>
+               <li><a href="o-email"><img src="/styles/email.png" alt="o-email"></a></li>
+            </ul>
+            
+         </div>
+         <script src="/scripts/all.min.js"></script>
+         <script>
+            var menuBar = document.querySelector('.menu-mobile a.icon-menu')
+
+            menuBar.addEventListener('click' , (e) => {
+               e.preventDefault()
+               alert('clicado')
+               
+            })
+         </script>
+      </nav>
+      <nav class="logoMain">
+         <div class="leftLogo">lala</div>
+         <div class="spaceLogo">spaceLogo</div>
+         <div class="rightLogo">rightLogo</div>
+       </nav>
+      <nav class="lowMenu">
+         <ul class="menuButtons">
+            <li><a href="index.html">Home</a></li>
+            <li><a href text-i="aboutUs.html">Nosso Objetivo</a></li>
+            <li><a href text-i="services.html">
+               <div class="dropdown">
+                   <button class="dropbtn">Serviços</button>
+                  <div class="dropdown-content">
+                      <a href="#">Drywall</a>
+                      <a href="#">Elétrica</a>
+                      <a href="#">Pinturas</a>
+                  </div>
+             </div></a></li>
+            <li><a href text-i="galery.html">Galeria</a></li>
+            <li><a href text-i="partners.html">Parceiros</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main class="tag">main</main>
+   <footer class="tag">Footer</footer>
+  
+</body>
+</html>

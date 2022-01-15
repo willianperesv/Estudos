@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+</head>
+<h1> Qual valor você deseja?</h1>
+<body>
+  Digite o valor desejado<input type="number" name="val" id="val"></br>
+  Forma de Pagamento     <input type="number" name="parc" id="parc"></br>
+  <p>1 - Para pagamento à vista 10% off</p>
+  <p>2 - Em até 5x sem juros</p>
+  <p>3 - Até 10x com 20% de juros</p>
+  
+  <input type="button" value="Simular" onclick="simular()">
+<div id="res"></div>
+  <script>
+      function simular() {
+          let valo = document.getElementById('val')
+          let parce = document.getElementById('parc')
+          let valor = Number(valo.value)
+          let parcelas = Number(parce.value)
+          
+          let res = document.getElementById('res')
+            
+
+          switch(parcelas){
+            case 1:
+                let desc = (valor / 100) * 10
+                let pag = valor - desc
+                 res.innerHTML = `O valor final foi de R$ ${pag}.`
+                break
+            case 2:
+                let qparc = prompt("Digite o numero de parcelas")
+                if(qparc >= 6) {
+                    alert("Valor de parcelas acima do valor sem juros")
+                  } else {
+                let par = (valor / qparc).toFixed(2)
+                res.innerHTML = `o valor do emprestimo é de R$${valor} que deverá ser pago em R$${qparc}x de R$${par}.`
+                  }
+            
+                break
+            case 3:
+                 let qparc1 = prompt("Digite o numero de parcelas")
+                      if(qparc1 <= 6){
+                        alert("Numero das parcelas acima da condição escolhida")
+                      } else if(qparc1 <= 10) {
+                         let juro = valor / 100 * 20
+                         let totval = valor + juro
+                         let totparc = totval / qparc1
+                         res.innerHTML = ` O valor requisitado foi R$${valor}, em ${qparc1} x de R$${totparc}, o valor total é R$${totval}` 
+                      }
+
+                     break
+              
+                  default:
+                   Alert("Escolha invalida!") 
+              break
+      }
+    
+    }
+  </script>
+</body>
+</html>

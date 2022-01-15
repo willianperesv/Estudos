@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+    <style>
+      body {
+          background : paleturquoise;
+          font : 10px black;
+          height: 200px;
+          width: 200px;
+      }
+        
+    </style>
+</head>
+<body>
+    <h1>Qual seu país?</h1>
+    <input type="text" name="born" id="born">
+    <input type="button" value="vamovê" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var nascimento = document.getElementById('born')
+            var res = document.querySelector('div#res')
+            var bornor = (nascimento.value)
+            
+        
+            if (bornor == 'Brasil') {
+                 res.innerHTML += `<p>  ${bornor} ,Que merda hein! Já te roubaram enquanto lia <p>`
+                 }
+            else{
+                res.innerHTML = ` ${bornor} sai dae o gringo safado`
+            }
+         
+                    
+                }
+               
+                    
+            
+    </script>
+</body>
+</html>

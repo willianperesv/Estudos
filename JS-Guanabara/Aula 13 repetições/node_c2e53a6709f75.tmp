@@ -1,0 +1,20 @@
+var c = 10
+while (c<=100000000){
+
+ console.log(`passo ${c}`)
+c++
+}
+
+
+
+
+
+/*
+console.log("tudo bem")
+console.log("tudo bem")
+console.log("tudo bem")
+console.log("tudo bem")
+console.log("tudo bem")
+console.log("tudo bem")
+console.log("tudo bem")
+*/

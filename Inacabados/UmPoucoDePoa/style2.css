@@ -1,0 +1,141 @@
+/*Global =====================================*/
+
+:root{ /*:root faz referencia a o html e podemos 
+           armazenar variaves pra usar em qualquer tag*/
+    --dark-blue: #363f5f;
+}
+
+* { /*O '*' é um seletor universal que impõe os comando dentro dele a todas as tags*/
+    margin: 0; /*margem da pagina*/
+    padding: 0; /*preenchimento interno dos elementos*/
+    box-sizing: border-box; /*é a medida da caixa*/
+}
+
+body {
+    background: #f0f2f5;
+    font-family: 'Poppins', sans-serif; /*fonte buscada na google*/
+}
+
+.container { /*para chamar uma classe em css usamos o ponto e o nome da classe*/
+    width: min(90vw, 800px);/*o min() é uma função em css e essa função aceita
+                  2 argumentos e ele compara o menor entre os dois e deixa sempre 
+                  o menor. */
+    margin: auto;
+}
+
+
+/*Titles ===================================*/
+h2 {
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color: #363f5f;
+    font-weight: normal;
+}
+
+
+/*Header ====================================*/
+header {
+    background: #2D4A22;
+   /*"padding: 2rem 2rem 6rem 6rem;" rem é uma unidade de medida quando se coloca 
+                                  quatro elementos em pra prencimento 'paddinig'
+                                  a ordem é topo, direto, baixo, esquerdo*/
+    padding: 2rem 0 10rem; /*nessa opção ele coloca 2 rem em cima, laterais 0 e 10rem embaixo*/
+    text-align: center;
+}
+
+#logo { /*# é usada pra chamar um id em css*/
+    color: #fff;
+    font-weight: 100; /*levesa da fonte*/
+}
+
+
+/* Balance ==========================================*/
+#balance {
+    margin-top: -8rem;
+}
+
+#balance h2 {
+    color: #fff;
+    margin-top: 0;
+}
+
+
+/*Cards ========================================*/
+.card {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    color: var(--dark-blue); /*é uma função que armazena variavel*/
+    }
+
+.card h3{
+    font-weight: normal;
+    font-size: 1rem;
+    }
+
+.card p { /*p é de paragrafo do html*/
+    font-size: 2rem;
+    line-height: 3rem; /*é a separação entre as linas de um elemnto caso 
+                            ele precise quebrar uma linha*/
+    }
+
+.card.total { /*aqui vemos a chamada de duas classes ao mesmo tempo*/
+    background:#49aa26;
+    }
+
+
+/*Table ========================================*/
+#data-table {
+    width: 100%;
+    border-spacing: 0 0.5rem;/*medidas refere-se ao 1º eixo vertical 2º horizontal */
+    color: #969cb3;
+}
+
+table thead tr th:first-child,
+table thead tr th:first-child {
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table tbody tr{
+    opacity: 0.7;
+}
+
+table tbody tr:hover {/*para dar alteração de cor quando passa o mouse por cima */
+    opacity: 1;
+}
+
+table th {
+    background: white;    
+    font-weight: normal;
+    padding: 1rem 2rem;
+    text-align: left;
+   
+}
+
+table td {
+    background: white;
+    padding: 1rem 2rem;
+    
+}
+
+td.description {
+    color: var(--dark-blue);
+}
+
+td.income {
+    color: #12a454;
+}
+
+td.expense {
+    color: #e92929;
+}
+ 
+
+/*Footer ========================================*/
+footer {    
+    text-align: center;
+    padding: 4rem 0 2rem;
+    color: var(--dark-blue);
+    opacity: 0.6;
+}

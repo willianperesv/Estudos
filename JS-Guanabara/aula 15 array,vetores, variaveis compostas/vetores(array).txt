@@ -1,0 +1,19 @@
+array=vetor = varaivel com varios elementos, composto por seu valor e chave de identificação
+ variavel com varios espaços
+ composição
+  elemento=um par que agrupa o espaço, valor e o índice
+  conteudo de cada elemento
+
+.push adiciona um elemento a variavel em sua ultima vaga
+exemplo: let num = [5,6,10]
+         num.push(7) // automatiza a inserção de elementos ao array
+
+
+LENGTH NÃO É METHODO É ATRIBUTO
+  let num = [5,6,10]
+  num.push(7)
+  num.length
+  num.sort() // organiza os elementos por ordem crescente
+
+for(let pos in valores){}// simplifica o codigo 'para(for) variavel dentro(in) variavel'
+index

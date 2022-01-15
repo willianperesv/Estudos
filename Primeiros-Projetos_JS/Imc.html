@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<h1>Calculando IMC</h1>
+<body>
+    Peso <input type="number" name="peso" id="peso">
+    Altura <input type="number" name="altura" id="altura">
+    <input type="button" value="Calcular" onclick = "calcular()">
+    <div id="resu"></div>
+</body>
+  <script>
+   
+   
+     function calcular(){
+   var inpeso = Number.parseFloat(document.getElementById('peso'))
+   var inalt = Number.parseFloat(document.getElementById('altura'))
+   var resu = document.getElementById('resu')
+   var res = inpeso / (inalt**2)
+   var result2 = res.toFixed(2) //controla o numero de casas decimais
+
+  
+      if (res <= 17){
+          resu.innerHTML = `Seu imc é de ${result2} portanto você está abaixo do peso ideal`     
+      }
+      else if(res <= 25){
+          
+          resu.innerHTML = `Seu imc é de ${result2} portanto você está no peso ideal`
+          
+         } 
+      else if(res <= 35) {
+        resu.innerHTML = `Seu imc é de ${result2} Obesidade nível `
+        }
+      else if(res <= 40){ 
+         resu.innerHTML = `Seu imc é de ${result2} Obesidade nível 2`
+        }
+      else {
+          resu.innerHTML= `seu imc é de ${result2} Obesidade nível 3`
+      }
+      
+           
+        }
+    
+
+  </script>
+</html>

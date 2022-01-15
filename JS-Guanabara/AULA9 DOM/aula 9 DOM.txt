@@ -1,0 +1,25 @@
+DOM
+
+DOCUMENT OBJECT MODEL
+
+
+funciona sob sistema hierarquico de importancia
+
+	WINDOW (parent)
+LOCATION  DOCUMENT   HISTORY  (childs)
+        
+
+         HTML (parents)
+   head                Body (Childs)
+
+MODOS DE SELEÇÃO DE ELEMENTOS
+
+MARCA  getElementsByTagName()
+ID     getElementByld()
+NOME   getElementsByName()
+CLASSE getElementsByClassName()
+SELETOR querySelector ()
+        querySelectorAll()
+
+// TODA DIV É REPESENTADA POR UMA # E UMA CLASSE POR UM .2
+
